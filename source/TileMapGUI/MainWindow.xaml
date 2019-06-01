@@ -1,0 +1,52 @@
+﻿<Window x:Class="Chucklepie.TileMapGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TileMapGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="475" Width="819">
+    <Grid Height="481">
+        <TextBox x:Name="OutFile" HorizontalAlignment="Left" Height="23" Margin="221,32,0,0" VerticalAlignment="Top" Width="396" TabIndex="0"/>
+        <TextBox x:Name="NodeName" HorizontalAlignment="Left" Height="23" Margin="221,65,0,0" Text="TileMap" VerticalAlignment="Top" Width="120" TabIndex="1"/>
+        <TextBox x:Name="CSVImport" HorizontalAlignment="Left" Height="23" Margin="221,265,0,0" VerticalAlignment="Top" Width="396" TabIndex="9"/>
+        <TextBox x:Name="ImportSheet" HorizontalAlignment="Left" Height="23" Margin="221,121,0,0" VerticalAlignment="Top" Width="120" ToolTip="When you load the scene Godot will import this file, so make sure it is relative to the scene file, usually the same or a 'asset' sub folder" TabIndex="2"/>
+        <TextBox x:Name="UnitWidth" HorizontalAlignment="Left" Height="23" Margin="221,177,0,0" Text="0" VerticalAlignment="Top" Width="50" TabIndex="6"/>
+        <TextBox x:Name="StartCellIndex" HorizontalAlignment="Left" Height="23" Margin="221,208,0,0" Text="0" VerticalAlignment="Top" Width="50" TabIndex="8"/>
+        <Label x:Name="label" Content="Name of scene file to create" HorizontalAlignment="Left" Margin="49,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Name to give new node" HorizontalAlignment="Left" Margin="49,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="CSV file to import" HorizontalAlignment="Left" Margin="49,262,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Cells in sheet (w, h)" HorizontalAlignment="Left" Margin="49,177,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy4" Content="Name of import (res// relative)" HorizontalAlignment="Left" Margin="49,118,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy5" Content="Tileset Data" HorizontalAlignment="Left" Margin="26,102,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="ImportSheetSelectButton" Content="Import Sheet (view only)" HorizontalAlignment="Left" Margin="353,118,0,0" VerticalAlignment="Top" Height="26" Click="ImportSheetSelectButton_Click" TabIndex="3"/>
+        <TextBox x:Name="UnitHeight" HorizontalAlignment="Left" Height="23" Margin="277,177,0,0" Text="0" VerticalAlignment="Top" Width="50" TabIndex="7"/>
+        <TextBox x:Name="CellWidth" HorizontalAlignment="Left" Height="23" Margin="221,149,0,0" Text="32" VerticalAlignment="Top" Width="50" TabIndex="4"/>
+        <Label x:Name="label_Copy6" Content="Size of each cell in pixels (w, h)" HorizontalAlignment="Left" Margin="49,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CellHeight" HorizontalAlignment="Left" Height="23" Margin="277,149,0,0" Text="32" VerticalAlignment="Top" Width="50" TabIndex="5"/>
+        <Label x:Name="label_Copy7" Content="Start Cell Index" HorizontalAlignment="Left" Margin="52,207,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy8" Content="Required" HorizontalAlignment="Left" Margin="26,13,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label_Copy9" Content="Map Data" HorizontalAlignment="Left" Margin="26,239,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="CSVIMportSelectButton" Content="Select CSV" HorizontalAlignment="Left" Margin="632,264,0,0" VerticalAlignment="Top" Width="118" Height="25" Click="CSVIMportSelectButton_Click" TabIndex="10"/>
+        <TextBox x:Name="CSVString" HorizontalAlignment="Left" Height="23" Margin="221,296,0,0" VerticalAlignment="Top" Width="396" TabIndex="11"/>
+        <Label x:Name="label_Copy10" Content="CSV data" HorizontalAlignment="Left" Margin="49,293,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CSVStringSampleButton" Content="Generate Sample" HorizontalAlignment="Left" Margin="632,294,0,0" VerticalAlignment="Top" Height="25" Width="118" Click="CSVStringSampleButton_Click" TabIndex="12"/>
+        <Label x:Name="label_Copy3" Content="Internals" HorizontalAlignment="Left" Margin="24,356,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="InternalFormat" HorizontalAlignment="Left" Height="23" Margin="54,406,0,0" Text="2" VerticalAlignment="Top" Width="89" TabIndex="14"/>
+        <TextBox x:Name="InternalSteps" HorizontalAlignment="Left" Height="23" Margin="150,406,0,0" Text="3" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.358,0.567" TabIndex="15"/>
+        <TextBox x:Name="InternalMapWidth" HorizontalAlignment="Left" Height="23" Margin="245,406,0,0" Text="65536" VerticalAlignment="Top" Width="89" TabIndex="16"/>
+        <TextBox x:Name="InternalMapClass" HorizontalAlignment="Left" Height="23" Margin="339,406,0,0" Text="TileMap" VerticalAlignment="Top" Width="89" TabIndex="17"/>
+        <TextBox x:Name="InternalTileClass" HorizontalAlignment="Left" Height="23" Margin="433,406,0,0" Text="TileSet" VerticalAlignment="Top" Width="89" TabIndex="18"/>
+        <Label x:Name="label_Copy11" Content="TileSet class" HorizontalAlignment="Left" Margin="433,380,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy12" Content="Load Steps" HorizontalAlignment="Left" Margin="150,380,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy13" Content="Map Width" HorizontalAlignment="Left" Margin="245,380,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy14" Content="TileMap class" HorizontalAlignment="Left" Margin="339,380,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy15" Content="Format" HorizontalAlignment="Left" Margin="54,380,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="TileSheetImage" HorizontalAlignment="Left" Height="171" Margin="502,75,0,0" VerticalAlignment="Top" Width="288"/>
+        <Button x:Name="GenerateScene" Content="Generate Scene File" HorizontalAlignment="Left" Margin="632,405,0,0" VerticalAlignment="Top" Height="25" Click="GenerateScene_Click" TabIndex="19" Width="118"/>
+        <TextBox x:Name="MapIgnoreCell" HorizontalAlignment="Left" Height="23" Margin="221,325,0,0" Text="-1" VerticalAlignment="Top" Width="50" TabIndex="13"/>
+        <Label x:Name="label_Copy16" Content="Ignore Cell" HorizontalAlignment="Left" Margin="52,324,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SceneFileButton" Content="Select File To Save" HorizontalAlignment="Left" Margin="632,31,0,0" VerticalAlignment="Top" Height="25" Width="118" Click="SceneFileButton_Click" TabIndex="12"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,1 @@
+tilemapconsole.exe -out cybernoid.tscn -csv cybernoid_level2_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 11 -ir "cybernoid_level2_tilemap.bmp"  -ms 1
