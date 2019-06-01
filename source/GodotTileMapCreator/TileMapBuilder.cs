@@ -169,7 +169,7 @@ namespace Chucklepie.GodotTileMap
         /// Sets the starting index value of the tilesheet for when drawing maps 
         /// Typically 0 or 1, i.e. when reading CSV data, which is the first item
         /// </summary>
-        /// <param name="index">The start index in the tilesheet used in the map CSV data, usually 0 or 1</param>
+        /// <param name="index">The start index in the tilesheet used in the map CSV data, usually 0 or 1. Default 0.</param>
         /// <returns></returns>
         public TileMapBuilder SetTileSheetStartIndex(uint index)
         {

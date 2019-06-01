@@ -10,7 +10,7 @@ If you wish to import the scene file but do not want the actual tilemap created 
 
 tile_data = PoolIntArray( 1, 0, 0, 2, 1, 0, 0, 2, 65536, 1, 3, 65536, 2, 4, 65536 )
 
-####Important####
+#### Important
 If you are loading in Windows it seems to crash when you use most of the samples because it is doing something seemingly very inefficient when loading the tilesets. You will see this by an infinite looping error in Godot console window. To fix this, go to the project settings, find the 'maximum queue size' property and change from 1024 to something very large, e.g. 102400 (1Gb, presuming you have enough memory).
 
 ## Samples

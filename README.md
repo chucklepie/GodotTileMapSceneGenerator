@@ -1,11 +1,11 @@
 # GodotTileMapSceneGenerator
 
-##Introduction
+## Introduction
 This tool does two things
 1. Generate a Godot tilemap scene file (the tileset) from a given tilesheet graphic
 2. Creates tilemap data for a map supplied by a given CSV file or string data
 
-##Quick Overview
+## Quick Overview
 Assume you have the following graphic from world 1-1 of Mario
 
 [![Mario Tiles](samples/mario-1-1_tiles_32x32.bmp)]
@@ -43,7 +43,7 @@ Application: http://retrospec.sgn.net/game/specmapper
 
 The software automates map generation by creating a grid of squares each the size of the screen. You simply take a screenshot, go to the application and it will be pasted in. It caters for removing margins, etc. The only problem is I don't have the source code and on Windows 10 you may get an error registering the file 'COMCTL32.OCX' :(
 
-##Software
+## Software
 The tool is written in .Net Core 3 (preview) as a command line program and a GUI. Meaning the command line tool will run under Windows, Mac, Linux and the GUI on Windows (unless Windows WPF has been ported). 
 
 Alternatively, because the command line/GUI are simply entry points to a common class library, you can create your own. The class library is a single file class library project and is accessed simply by using a 'Builder' pattern, as detailed in the source code section.

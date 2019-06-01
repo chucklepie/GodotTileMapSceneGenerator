@@ -39,7 +39,6 @@ namespace Chucklepie.TileMapGUI
         {
             string[] rowData;
             TileMapBuilder tb = new TileMapBuilder();
-
             if (CSVString.Text.Trim()!="")
             {
                 rowData = CSVString.Text.Trim().Split('|');
