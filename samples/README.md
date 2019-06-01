@@ -94,7 +94,7 @@ There is a sample windows command file (but you can easily modify it for any env
 In the case of all the games except Marauder, they all have the first tile as the empty tile. In the case of Mario, two are supplied, one with sky and one without sky.
 
 Also note, in Marauder the red, yellow, green tiles are actually parallax scrolled in the actual game.
-<blockquote>
+```c
 tilemapconsole.exe -out mario.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp"  -ms 1 -ci 1
 tilemapconsole.exe -out marioNoSky.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp"  -ci 1
 
@@ -107,7 +107,7 @@ tilemapconsole.exe -out dandare.tscn -csv dandare1_tilemap.csv -cw 32 -ch 32 -iw
 tilemapconsole.exe -out dizzy.tscn -csv dizzy6_tilemap.csv -cw 16 -ch 16 -iw 64 -ih 45 -ir "dizzy6_tiles_16x16.bmp"  -ms 1 -ci 1
 
 tilemapconsole.exe -out marauder_level1.tscn -csv marauder_level1_tilemap.csv -cw 16 -ch 16 -iw 16 -ih 13 -ir "marauder_level1_tiles_16x16.bmp"  -ci 1
-</blockquote>
+```
 
 When using the GUI simply translate the options to the GUI:
 
