@@ -9,7 +9,7 @@ Refer to home page and samples for documentation on the tools. The GUI and Conso
 ## Getting Started
 
 Visual Studio: Download, open the solution file and build
-Others: Run <code>dotnet build</code>
+Others: Run `dotnet build`
 
 Pre-requisites: 
 - GodotTileMapCreator: Build with .net core 2.2, but any version of .net core or any full .Net should work if you update project
@@ -21,13 +21,15 @@ Alternatively, Windows binaries can be found here:
 ## Using class library
 Assuming you have read the home page/sample introduction and know how to use the software and the different parameters, using the class library GodotTileMapCreator is simple.
 
-<code>TileMapBuilder tb = new TileMapBuilder();</code>
+```c#
+TileMapBuilder tb = new TileMapBuilder();
+```
 
 If you are supplying a pre-made map file then:
-<code>
+```c#
             int[,] mapData = { {1,2,3 }, {4,5,6 } };
             TileMapBuilder tb = new TileMapBuilder(mapData);
-</code>
+```
 
 The class is a Builder pattern with method chaining. All methods are either setters of the data or the actual build method, with the exception of one helper method described later. So simply apply all methods required and and with calling the Build() method to return a string containing your entire scene file. The console/gui applications take this string and save it to a file.
 
@@ -54,21 +56,21 @@ All methods except Build() and TransformInputData returns 'this' to allow method
 
 ### Example 1: Create tilemap with no map data using all defaults and minimal usage:
 
-<code>
+```c#
 TileMapBuilder tb = new TileMapBuilder();
 string scene=tb
     .SetTileSheet("mario.bmp")
     .SetTileSheetSizeUnits(16, 10)
     .Build();
-</code>
+```
 
 ### Example 2: Create tilemap with map data using all defaults and minimal usage:
 
-<code>
+```c#
 int[,] mapData = { {1,2,3 }, {4,5,6 } };
 TileMapBuilder tb = new TileMapBuilder(mapData);
 string scene=tb
     .SetTileSheet("mario.bmp")
     .SetTileSheetSizeUnits(16, 10)
     .Build();
-</code>
+```
