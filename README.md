@@ -9,7 +9,10 @@ It is not created by or endorsed by Godot. Godot is in the name because it gener
 
 Visit the samples folder, download the tile graphics and scene files and import into Godot for a quick test. Watch the video for details on use and location of other tools.
 
-![Video sampler](https://youtu.be/0TMO8uQr1kU)
+[![Video sampler](https://youtu.be/0TMO8uQr1kU/0.jpg)(https://youtu.be/0TMO8uQr1kU)]
+
+Software can be downloaded at: 
+http://retrospec.sgn.net/index.php?link=utility
 
 
 ## Quick Overview
