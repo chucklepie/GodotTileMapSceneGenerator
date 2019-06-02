@@ -9,7 +9,9 @@ It is not created by or endorsed by Godot. Godot is in the name because it gener
 
 Visit the samples folder, download the tile graphics and scene files and import into Godot for a quick test. Watch the video for details on use and location of other tools.
 
-[![Video sampler](https://youtu.be/0TMO8uQr1kU/0.jpg)(https://youtu.be/0TMO8uQr1kU)]
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0TMO8uQr1kU" target="_blank">
+<img src="http://img.youtube.com/vi/0TMO8uQr1kU/0.jpg" 
+alt="Tilemap generator Video" width="240" height="180" border="10" /></a>
 
 Software can be downloaded at: 
 http://retrospec.sgn.net/index.php?link=utility
