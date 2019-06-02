@@ -9,7 +9,7 @@ It is not created by or endorsed by Godot. Godot is in the name because it gener
 
 Visit the samples folder, download the tile graphics and scene files and import into Godot for a quick test. 
 
-Watch the video (sorry, don't know how to change image, it is there though) for details on use and location of other tools.
+Watch the video and to get details on use and location of other tools.
 
 [![Video Link](http://img.youtube.com/vi/0TMO8uQr1kU/0.jpg)](http://www.youtube.com/watch?v=0TMO8uQr1kU "Tilemap and Tilesheet Generator for Godot")
 
