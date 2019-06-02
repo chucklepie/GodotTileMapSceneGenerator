@@ -34,6 +34,8 @@ The bitmap map is what we want the tilemap to end up looking like in Godot. They
 - Marauder (first level): A zx spectrum game. 8 colour graphics 224xY, original is 8x8 pixel tiles
 - Mario World 1 Level 1: Original Mario world map. 8 colour graphics width x 224, original is 8x8 pixel tiles 
 
+Refer to the command line code below for sizes of the tilesheets generated for the samples.
+
 The Rex map was created my me using a tool I created for Windows many years ago in Visual Basic. You can find the application below. Basically creating the screenshot maps is a simple process of run the game, take a screenshot, switch to the application and it is pasted at the current location. Move to the next location in the mapping application, then repeat the process. You end up with a map similar to the GAME_Map.bmp files in this folder.
 
 Note, if you try the tool, it may fail due to 'comctl32.ocx'. I don't have the source anymore to recompile.
@@ -95,16 +97,18 @@ In the case of all the games except Marauder, they all have the first tile as th
 
 Also note, in Marauder the red, yellow, green tiles are actually parallax scrolled in the actual game.
 ```c
-tilemapconsole.exe -out mario.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp"  -ms 1 -ci 1
-tilemapconsole.exe -out marioNoSky.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp"  -ci 1
+tilemapconsole.exe -out mario.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp"  -ci 1
+tilemapconsole.exe -out mario_noBG.tscn -csv mario-1-1_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 12 -ir "mario-1-1_tiles_32x32.bmp" -ms 1 -ci 1
 
-tilemapconsole.exe -out rex.tscn -csv rex_level1_tilemap.csv -cw 8 -ch 8 -iw 32 -ih 10 -ir "rex_level1_tiles_8x8.bmp"  -ms 1 -ci 1
+tilemapconsole.exe -out rex.tscn -csv rex_level1_tilemap_nobg.csv -cw 8 -ch 8 -iw 32 -ih 10 -ir "rex_level1_tiles_8x8.bmp"  -ci 1
 
-tilemapconsole.exe -out cybernoid.tscn -csv cybernoid_level2_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 11 -ir "cybernoid_level2_tiles_32x32.bmp"  -ms 1 -ci 1
+tilemapconsole.exe -out cybernoid.tscn -csv cybernoid_level2_tilemap.csv -cw 32 -ch 32 -iw 16 -ih 11 -ir "cybernoid_level2_tiles_32x32.bmp"  -ci 1
+tilemapconsole.exe -out cybernoid.tscn -csv cybernoid_level2_tilemap_noBG.csv -cw 32 -ch 32 -iw 16 -ih 11 -ir "cybernoid_level2_tiles_32x32.bmp"  -ms 10 -ci 1
 
-tilemapconsole.exe -out dandare.tscn -csv dandare1_tilemap.csv -cw 32 -ch 32 -iw 32 -ih 14 -ir "dandare1_tiles_32x32.bmp"  -ms 1 -ci 1
+tilemapconsole.exe -out dandare.tscn -csv dandare1_tilemap.csv -cw 32 -ch 32 -iw 32 -ih 14 -ir "dandare1_tiles_32x32.bmp"  -ms -1 -ci 1
 
-tilemapconsole.exe -out dizzy.tscn -csv dizzy6_tilemap.csv -cw 16 -ch 16 -iw 64 -ih 45 -ir "dizzy6_tiles_16x16.bmp"  -ms 1 -ci 1
+tilemapconsole.exe -out dizzy.tscn -csv dizzy6_tilemap.csv -cw 16 -ch 16 -iw 64 -ih 45 -ir "dizzy6_tiles_16x16.bmp" -ci 1
+tilemapconsole.exe -out dizzy_nobg.tscn -csv dizzy6_tilemap.csv -cw 16 -ch 16 -iw 64 -ih 45 -ir "dizzy6_tiles_16x16.bmp"  -ms 1 -ci 1
 
 tilemapconsole.exe -out marauder_level1.tscn -csv marauder_level1_tilemap.csv -cw 16 -ch 16 -iw 16 -ih 13 -ir "marauder_level1_tiles_16x16.bmp"  -ci 1
 ```

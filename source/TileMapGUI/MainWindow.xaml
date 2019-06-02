@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TileMapGUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="475" Width="819">
-    <Grid Height="481">
+    <Grid Height="481" Loaded="Grid_Loaded">
         <TextBox x:Name="OutFile" HorizontalAlignment="Left" Height="23" Margin="221,32,0,0" VerticalAlignment="Top" Width="396" TabIndex="0"/>
         <TextBox x:Name="NodeName" HorizontalAlignment="Left" Height="23" Margin="221,65,0,0" Text="TileMap" VerticalAlignment="Top" Width="120" TabIndex="1"/>
         <TextBox x:Name="CSVImport" HorizontalAlignment="Left" Height="23" Margin="221,265,0,0" VerticalAlignment="Top" Width="396" TabIndex="9"/>

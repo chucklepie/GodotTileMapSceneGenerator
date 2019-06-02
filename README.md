@@ -5,6 +5,8 @@ This tool does two things
 1. Generate a Godot tilemap scene file (the tileset) from a given tilesheet graphic
 2. Creates tilemap data for a map supplied by a given CSV file or string data
 
+It is not created by or endorsed by Godot. Godot is in the name because it generated Godot scene files :)
+
 ## Quick Overview
 Assume you have the following graphic from world 1-1 of Mario
 

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Reflection;
 
 namespace Chucklepie.TileMapGUI
 {
@@ -203,6 +204,14 @@ namespace Chucklepie.TileMapGUI
             {
                 OutFile.Text = d.FileName;
             }
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var assemblyVersion = assembly.GetName().Version.ToString();
+            var assemblyLib = typeof(TileMapBuilder).Assembly.GetName().Version.ToString();
+            this.Title = $"Tilemap Generator for Godot. Version {assemblyVersion}, Library {assemblyLib}";
         }
     }
 }

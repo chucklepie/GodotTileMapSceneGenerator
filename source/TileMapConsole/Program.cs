@@ -108,7 +108,8 @@ namespace Chucklepie.TileMapConsole
                 {
                     Console.WriteLine($"Failed: {e.Message}");
                 }
-                Console.ReadKey();
+                //Console.ReadKey();
+                Console.WriteLine($"Success. Scene file written to {outFile}");
             }
             catch (Exception e)
             {
