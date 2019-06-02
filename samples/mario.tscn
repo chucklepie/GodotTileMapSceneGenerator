@@ -1925,7 +1925,7 @@
 191/z_index = 0
 
 
-[node name="MarioTileMap" type="TileMap"]
+[node name="TileMap" type="TileMap"]
 format=1
 tile_set = SubResource( 1 )
 cell_size = Vector2( 32, 32 )
