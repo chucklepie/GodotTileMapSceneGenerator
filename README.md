@@ -7,6 +7,11 @@ This tool does two things
 
 It is not created by or endorsed by Godot. Godot is in the name because it generated Godot scene files :)
 
+Visit the samples folder, download the tile graphics and scene files and import into Godot for a quick test. Watch the video for details on use and location of other tools.
+
+![Video sampler](https://youtu.be/0TMO8uQr1kU)
+
+
 ## Quick Overview
 Assume you have the following graphic from world 1-1 of Mario
 
